@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuEdit" android:title="Edit Customer" />
+    <item android:id="@+id/menuHistory" android:title="View Full History" />
+</menu>

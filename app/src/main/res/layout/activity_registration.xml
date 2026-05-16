@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Create Shop Account"
+            android:textColor="@color/onSurface"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Set up your shop details and secure PIN."
+            android:textColor="@color/onSurfaceVariant"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/outline"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/shopNameLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Shop Name"
+                    app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/shopNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ownerNameLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:hint="Owner Name"
+                    app:startIconDrawable="@android:drawable/ic_menu_edit"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ownerNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobileLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:hint="Mobile Number"
+                    app:startIconDrawable="@android:drawable/ic_menu_call"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobileInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pinLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:hint="4-digit PIN"
+                    app:endIconMode="password_toggle"
+                    app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pinInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirmPinLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:hint="Confirm PIN"
+                    app:endIconMode="password_toggle"
+                    app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+                    app:startIconTint="@color/onSurfaceVariant">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmPinInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/registerButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Register Shop"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    app:cornerRadius="16dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

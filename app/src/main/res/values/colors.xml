@@ -1,0 +1,52 @@
+<resources>
+    <!-- Material 3 Colors from Stitch Design -->
+    <color name="primary">#166534</color>
+    <color name="primary_green">#166534</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#DCFCE7</color>
+    <color name="primary_light_green">#DCFCE7</color>
+    <color name="onPrimaryContainer">#0F3B22</color>
+    <color name="primaryFixedDim">#86EFAC</color>
+    <color name="onPrimaryFixedVariant">#14532D</color>
+    <color name="accent_green">#22C55E</color>
+    <color name="splash_gradient_start">#166534</color>
+    <color name="splash_gradient_end">#22C55E</color>
+
+    <color name="secondary">#334155</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#E2E8F0</color>
+    <color name="onSecondaryContainer">#1E293B</color>
+
+    <color name="tertiary">#38656A</color>
+    <color name="onTertiary">#FFFFFF</color>
+    <color name="tertiaryContainer">#BCEBF0</color>
+    <color name="onTertiaryContainer">#002022</color>
+
+    <color name="background">#F5F7FB</color>
+    <color name="onBackground">#1A1C1C</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#1A1C1C</color>
+    <color name="onSurfaceVariant">#475569</color>
+    <color name="outline">#CBD5E1</color>
+    <color name="surfaceVariant">#F1F5F9</color>
+    <color name="profile_card_outline">#B8C9B5</color>
+    <color name="stat_card_green">#F3F8F4</color>
+    <color name="stat_card_green_stroke">#E2ECE3</color>
+    <color name="stat_card_orange_stroke">#FFDCC4</color>
+    <color name="stat_orange_text">#6B2E0E</color>
+
+    <!-- Status Colors -->
+    <color name="error">#BA1A1A</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="credit_red">#D32F2F</color>
+    <color name="credit_red_light">#FEF2F2</color>
+    <color name="credit_red_pill">#FBE8EA</color>
+    <color name="payment_green">#166534</color>
+    <color name="payment_green_dark">#14532D</color>
+    <color name="payment_green_soft">#E7F3EC</color>
+    <color name="payment_green_light">#D7FBE2</color>
+    <color name="whatsapp_green">#22C55E</color>
+
+    <color name="filter_orange">#F97316</color>
+    <color name="transaction_card_outline">#F1F5F9</color>
+</resources>

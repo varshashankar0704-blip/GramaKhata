@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/surface"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="14dp">
+
+        <View
+            android:id="@+id/typeBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <FrameLayout
+            android:id="@+id/iconBg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_transaction_icon"
+            android:backgroundTint="@color/credit_red_light">
+
+            <ImageView
+                android:id="@+id/typeIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_up"
+                app:tint="@color/credit_red" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/onSurface"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="Credit Given" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/onSurface"
+                android:textSize="9sp"
+                tools:text="22 Oct, 10:30 AM • Groceries" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/amountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/credit_red"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            tools:text="- ₹450" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="54dp"
+        android:background="@color/transaction_card_outline" />
+</LinearLayout>
