@@ -263,21 +263,3 @@ Main Android dependencies used in the project:
 
 ---
 
-# 📜 License
-
-This project is developed for educational and academic purposes.
-
----
-
-# 🙌 Contributors
-
-- Akshan B
-- Varsha Shankar
-
----
-
-# 📬 Contact
-
-For suggestions or collaboration:
-
-- GitHub: varshashankar0704-blip
